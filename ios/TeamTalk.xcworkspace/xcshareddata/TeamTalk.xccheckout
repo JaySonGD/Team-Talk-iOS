@@ -12,6 +12,8 @@
 	<dict>
 		<key>438AB9C685D2126C067FC6E0A59E9C7C05914A28</key>
 		<string>http://gitlab.mogujie.org/im/ttopen.git</string>
+		<key>57C7591FD46BAA5B68490C50C939355B738389B0</key>
+		<string>https://github.com/huang303513/Team-Talk-iOS.git</string>
 		<key>68BB4EA023A18E3CCE8C7A5DBAD6BFD8AC592504</key>
 		<string>https://github.com/mogujie/TeamTalk.git</string>
 	</dict>
@@ -21,17 +23,27 @@
 	<dict>
 		<key>438AB9C685D2126C067FC6E0A59E9C7C05914A28</key>
 		<string>../../../ttopen</string>
-		<key>68BB4EA023A18E3CCE8C7A5DBAD6BFD8AC592504</key>
+		<key>57C7591FD46BAA5B68490C50C939355B738389B0</key>
 		<string>../..</string>
+		<key>68BB4EA023A18E3CCE8C7A5DBAD6BFD8AC592504</key>
+		<string>../../../TeamTalk</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/mogujie/TeamTalk.git</string>
+	<string>https://github.com/huang303513/Team-Talk-iOS.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>68BB4EA023A18E3CCE8C7A5DBAD6BFD8AC592504</string>
+	<string>57C7591FD46BAA5B68490C50C939355B738389B0</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>57C7591FD46BAA5B68490C50C939355B738389B0</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Team-Talk-iOS</string>
+		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>

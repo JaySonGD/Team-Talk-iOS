@@ -41,6 +41,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+//    杭州搞定网络tt  21:57:17
+//    gd/111111
+//    杭州搞定网络tt  21:57:21
+//    gdgd/111111
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     if ([defaults objectForKey:@"ipaddress"] == nil) {
         [defaults setObject:@"http://tt.80gd.cn:8080/msg_server" forKey:@"ipaddress"];
