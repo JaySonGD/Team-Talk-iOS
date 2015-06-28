@@ -63,6 +63,7 @@ static NSInteger const reloginTimeinterval = 5;
     self = [super init];
     if (self)
     {
+        //监测网络状态和用户状态
         [self p_registerClientStateObserver];
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(n_receiveServerHeartBeat) name:DDNotificationServerHeartBeat object:nil];
     }
