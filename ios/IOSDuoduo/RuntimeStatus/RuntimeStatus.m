@@ -44,10 +44,14 @@
         self.user = [DDUserEntity new];
         self.userDefaults =[NSMutableArray arrayWithContentsOfFile:fixedlist];
         self.shieldingArray = [NSMutableArray arrayWithContentsOfFile:shieldinglist];
+        NSLog(@"RuntimeStatus:userDefaults = %@, shieldingArray = %@",self.userDefaults,self.shieldingArray);
+        
         [self registerAPI];
     }
     return self;
 }
+
+
 -(void)registerAPI
 {
     //接收踢出

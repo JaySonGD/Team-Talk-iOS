@@ -34,8 +34,9 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     
-  
+    //监听客户端网络状态和用户状态的管理类。
     [DDClientStateMaintenanceManager shareInstance];
+    //移除所有url缓存
      [[NSURLCache sharedURLCache] removeAllCachedResponses];
     if ([application respondsToSelector:@selector(registerUserNotificationSettings:)]) {
         // for iOS 8
@@ -55,12 +56,17 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
+    
+    
+    
+    //保存用户账户信息、运行时设置信息、注册用户剔除api等。
     [RuntimeStatus instance];
     
     self.mainViewControll = [MainViewControll new];
     self.nv=self.mainViewControll.nv1;
     LoginViewController *login = [LoginViewController new];
     self.window.rootViewController = login;
+    //如果是从远程推送启动
     NSDictionary *pushDict = [launchOptions objectForKey:UIApplicationLaunchOptionsRemoteNotificationKey];
     if(pushDict)
     {
